@@ -1,11 +1,16 @@
 {
   "name": "du3aa-api",
   "version": "3.1.5",
-  "description": "A free API service that provides random prayers",
+  "description": "An API service that provides a random Islamic prayer",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/m2kio/du3aa-api"
   },
-  "author": "mymk95 <m.filkawi@gmail.com>",
+  "author": {
+    "name": "MYK",
+    "email": "m2kio@pm.me"
+  },
+  "homepage": "https://api.du3aa.rest",
   "license": "MIT"
 }
