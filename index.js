@@ -2,16 +2,13 @@ addEventListener('fetch', event => {
   event.respondWith(handleRequest(event.request))
 })
 
-/**
- * Respond with a random prayer
- * @param {Request} request
- */
 async function handleRequest(request) {
   try {
     const headers = {
       'Access-Control-Allow-Origin': '*',
       'Access-Control-Allow-Methods': 'GET',
     }
+    
     const url = new URL(request.url)
     var formatParameter = null
 
@@ -29,10 +26,8 @@ async function handleRequest(request) {
       }
     }
 
-    const prayer = JSON.parse(
-      await (await fetch('https://cdn.jsdelivr.net/gh/mymk95/du3aa-api@prayers/prayers.json')).text()
-    )
-    const randomPrayer = prayer[Math.floor(Math.random() * prayer.length)]
+    const prayers = require('./prayers.json')
+    const randomPrayer = prayers[Math.floor(Math.random() * prayers.length)]
 
     if (formatParameter === 'text') {
       return new Response(randomPrayer, {
