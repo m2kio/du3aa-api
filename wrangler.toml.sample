@@ -1,0 +1,6 @@
+name = "du3aa-api"
+type = "webpack"
+zone_id = "..."
+account_id = "..."
+route = "api.du3aa.rest/*"
+workers_dev = true
