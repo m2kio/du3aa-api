@@ -40,10 +40,11 @@ if __name__ == "__main__":
       print('Done')
 
     elif choice == '2':
-      print('Adding...')
+      print('Please enter a prayer ...')
       prayer = input('Prayer: ')
       add(prayer)
-      print('done')
+      filter()
+      print('Done')
 
     else:
       print('Choose wisely :)')
