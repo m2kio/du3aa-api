@@ -12,13 +12,13 @@ async function handleRequest(request) {
       'Content-Type': 'application/json; charset=utf-8'
     }
 
-    return new Response(JSON.stringify({ prayer: randomPrayer }), {
+    return new Response(JSON.stringify({ status: 200, statusText: 'OK', prayer: randomPrayer }), {
       status: 200,
       headers
     })
 
   } catch (error) {
-    return new Response(JSON.stringify({ status: 500, error: 'Internal Server Error' }), {
+    return new Response(JSON.stringify({ status: 500, statusText: 'Internal Server Error' }), {
       status: 500,
       headers
     })
