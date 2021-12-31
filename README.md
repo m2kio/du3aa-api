@@ -6,13 +6,7 @@
 
 ## Usage
 
-```http
-GET https://api.du3aa.rest
-GET https://api.du3aa.rest?format=json
-GET https://api.du3aa.rest?format=text
-```
-
----
+`curl https://api.du3aa.rest`
 
 ## Development
 - Sign up for **Workers** account [here](https://dash.cloudflare.com/sign-up/workers)
